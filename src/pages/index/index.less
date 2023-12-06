@@ -1,0 +1,140 @@
+.myIndex{
+    padding: 10px;
+    .cardBox{
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            flex: 1;
+        }
+    }
+
+    /* 回测按钮 https://7coder.top/btns-down.html */
+    .run-btn {
+        font-family: boyang7000,serif;
+        font-size: 30px;
+        user-select: none;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 14px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .python {
+        transition: 1s;
+        background-size: 200% auto;
+    }
+    .python:hover {
+        background-position: right center;
+    }
+    .python-3 {
+        background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    }
+    .vb:before, .vb:after {
+        box-sizing: border-box;
+    }
+    .vb {
+        position: relative;
+        width: calc(100% - 4px);
+        color: #8ae6d4;
+        height: 40px;
+        line-height: 42px;
+        border: 2px solid #8ae6d4;
+        border-radius: 14px;
+        text-transform: uppercase;
+    }
+    .dot {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: all 300ms ease;
+        display: none;
+    }
+    .dot:after {
+        content: '';
+        position: absolute;
+        top: -7px;
+        height: 5px;
+        width: 5px;
+        background: #89e8cf;
+        border-radius: 50%;
+        border: 4px solid #89e8cf;
+        box-shadow: 0 0 .7em #FFF,
+        0 0 2em #89e8cf;
+    }
+    .vb .dot {
+        animation: atom 5s infinite linear;
+        display: block;
+    }
+}
+
+
+.MoXingDaoRu{
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.MoXingCeLue{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .boxBig{
+        flex: 1;
+        .box{
+            margin: 7.8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.JiaoYiCanShu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px)  {
+    .JiaoYiCanShu{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@keyframes atom {
+    0% {
+        transform: translateX(calc(-50% + 18px)) rotate(0);
+    }
+    45% {
+        transform: translateX(calc(50% - 18px)) rotate(0);
+    }
+    50% {
+        transform: translateX(calc(50% - 18px)) rotate(180deg);
+    }
+    95% {
+        transform: translateX(calc(-50% + 18px)) rotate(180deg);
+    }
+    100% {
+        transform: translateX(calc(-50% + 18px)) rotate(360deg);
+    }
+}

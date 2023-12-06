@@ -1,0 +1,65 @@
+.myLogin{
+    .body{
+        height: calc(100vh - 50px);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.bottom{
+    width: 730px;
+    margin: auto; position:
+    absolute;right: 180px;
+    bottom: 0;
+    color: #3d4f62;
+    font-size: 12px;
+    .item{
+        margin-right: 20px; user-select: none; cursor: pointer
+    }
+}
+
+.log{
+    margin-top: 20px;
+    padding: 20px 40px 40px 40px;
+    color: black;
+    .topTitle{
+        font-size: 34px; font-family: BellMT,serif;
+    }
+    .topTitle2{
+        color: #a5a5a5;font-size: 14px;line-height: 24px; letter-spacing: 0;margin: 10px 0;text-align: left;
+    }
+}
+
+.sign{
+    margin-top: 20px; padding: 39px 40px 40px 40px; color: black;
+    font-family:'Courier New', Courier, monospace;
+    .topTitle{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .body {
+        background-image: url('https://goldriven-show.oss-cn-shanghai.aliyuncs.com/2023/02/gold_origin/mountain0.jpg');
+    }
+    .right-content {
+        width: 450px; height: 400px; margin: auto; position: absolute; top: calc(50px + 10%); background: white;
+        left: calc(50% - 225px);
+        right: calc(50% - 225px);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .bottom {
+        display: none;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .body {
+        background-image: url('https://goldriven-show.oss-cn-shanghai.aliyuncs.com/2023/02/gold_origin/mountain.jpg');
+    }
+    .right-content {
+        width: 450px; height: 400px; margin: auto; position: absolute; top: calc(50px + 10%); right: calc(30% - 250px); background: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
